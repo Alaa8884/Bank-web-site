@@ -755,11 +755,12 @@ h4 {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 5rem;
 }
 
 .footer__item {
-  margin-right: 4rem;
+  margin-right: 5rem;
 }
 
 .footer__link {
