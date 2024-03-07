@@ -301,9 +301,13 @@ img {
 .header__title {
   flex: 1;
   max-width: 115rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  row-gap: 3rem;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  justify-items: start;
 }
 
 h1 {
@@ -319,6 +323,8 @@ h4 {
 .header__img {
   margin-top: 60px;
   width: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / span 4;
   transform: translateY(-6rem);
 }
 
@@ -654,7 +660,6 @@ h4 {
 .testimonial__author {
   margin-left: 3rem;
   font-style: normal;
-
   display: grid;
   grid-template-columns: 6.5rem 1fr;
   column-gap: 2rem;
