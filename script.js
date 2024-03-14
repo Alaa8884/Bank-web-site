@@ -20,11 +20,13 @@ const pages = document.querySelector('.nav__links');
 linkIcon.addEventListener('click', () => {
   if (pages.style.display === 'none') {
     pages.style.display = 'flex';
+    pages.classList.remove('translated');
     close1.classList.add('close-1');
     close2.classList.add('close-2');
     close3.classList.add('close-3');
   } else {
     pages.style.display = 'none';
+    pages.classList.add('translated');
     close1.classList.remove('close-1');
     close2.classList.remove('close-2');
     close3.classList.remove('close-3');
